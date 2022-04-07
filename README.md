@@ -3,11 +3,11 @@
 ## AIM:
 To study about the different digital IC’s and to verify the truth table in Quartus for the basic logic gates using Verilog programming.
 
-## Equipments Required:
+## EQUIPMENT'S REQUIRED:
 1. Hardware – PCs, Cyclone II , USB flasher
 2. Software – Quartus prime
 
-## Theory
+## THEORY:
 
 ### Introduction
 Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
@@ -59,27 +59,40 @@ The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will gi
 
 Y= A⊕B
 
-## Procedure
+## PROCEDURE:
 1. Connect the supply (+5V) to the circuit
 2. Switch ON the main switch
 3. Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed.
 4. If the output is 1, then the bulb glows.
 5. Check all the gates following the same procedure.
 
-## Program:
+## PROGRAM:
 ```
 /*
 Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by:K.M.SWETHA
+RegisterNumber:212221240055
 */
+module Exercise01(a,b,y1,y2,y3,y4,y5,y6,y7);
+input a,b;
+output y1,y2,y3,y4,y5,y6,y7;
+and (y1,a,b);
+or (y2,a,b);
+not (y3,a);
+xor (y4,a,b);
+nand (y5,a,b);
+nor (y6,a,b);
+xnor (y7,a,b);
+endmodule
 ```
-## Logic symbol & Truthtable
+## OUTPUT:
+
+## Logic symbol & Truthtable:
+![output](./truth1.png)
 
 ## RTL realization 
 
-## Output:
-![RTL](sam.png)
+![output](./expde1.png)
 
-## Result:
+## RESULT:
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
